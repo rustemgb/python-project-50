@@ -8,9 +8,9 @@ from gendiff.reading_files import reading_files
     "file1, file2, result",
     [
         (
-            "/User/rustemgb/python-project-50/tests/test_data/file1.json",
-            "/User/rustemgb/python-project-50/tests/test_data/file2.json",
-            "/User/rustemgb/python-project-50/tests/test_data/result_json.txt",
+            "/Users/rustemgb/python-project-50/tests/test_data/file1.json",
+            "/Users/rustemgb/python-project-50/tests/test_data/file2.json",
+            "/Users/rustemgb/python-project-50/tests/test_data/result_json.txt",
         )
     ],
 )
