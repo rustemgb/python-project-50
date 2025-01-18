@@ -11,5 +11,5 @@ package-install:
 	uv tool uninstall hexlet-code
 	uv tool install dist/*.whl
 
-lint:
+make lint:
 	uv run ruff check
