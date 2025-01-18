@@ -1,0 +1,10 @@
+*.egg-info
+*.egg-info/
+__pycache__
+dist/
+*.pyc
+.venv
+*_cache/
+.DS_Store
+demo.cast
+.python-version
