@@ -4,9 +4,6 @@ install:
 run:
 	uv run gendiff
 
-check:
-	uv check
-
 test:
 	uv run pytest
 
@@ -19,3 +16,6 @@ package-install:
 
 lint:
 	uv run ruff check
+
+check:
+	uv check
