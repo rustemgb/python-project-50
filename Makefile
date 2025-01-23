@@ -4,6 +4,9 @@ install:
 run:
 	uv run gendiff
 
+check:
+    uv check
+
 test:
 	uv run pytest
 
@@ -14,5 +17,5 @@ package-install:
 	uv tool uninstall hexlet-code
 	uv tool install dist/*.whl
 
-make lint:
+lint:
 	uv run ruff check
