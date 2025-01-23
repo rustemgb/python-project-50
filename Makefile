@@ -1,11 +1,11 @@
 install:
-	uv sync
+    pip install uv 
 
 run:
 	uv run gendiff
 
 check:
-    uv check
+	uv check
 
 test:
 	uv run pytest
