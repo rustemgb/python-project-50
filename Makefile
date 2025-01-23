@@ -17,5 +17,4 @@ package-install:
 lint:
 	uv run ruff check
 
-check:
-	uv check
+check: test lint
