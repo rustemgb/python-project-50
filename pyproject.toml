@@ -21,4 +21,5 @@ gendiff = "gendiff.scripts.gendiff:main"
 [dependency-groups]
 dev = [
     "ruff>=0.8.6",
+    "pyyaml>=6.0.2",
 ]
