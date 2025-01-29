@@ -15,8 +15,8 @@ def read_fixture(file_name):
 @pytest.mark.parametrize(
     "file1, file2, result",
     [
-        ("file1.json", "file2.json", "result.txt"),
-        ("file1.yaml", "file2.yaml", "result.txt"),
+        ("file1.json", "file2.json", "result_stylish.txt"),
+        ("file1.yaml", "file2.yaml", "result_stylish.txt"),
     ],
 )
 def test_generate_diff(file1, file2, result):
