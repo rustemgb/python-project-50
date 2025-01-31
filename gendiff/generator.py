@@ -31,6 +31,14 @@ def get_unchanged_status(key, value):
     }
 
 
+def get_nested_status(key, value1, value2):
+    return {
+        'status': 'nested',
+        'key': key,
+        'children': generator(value1, value2)
+    }
+
+
 def generator(file1, file2):
 
     all_key = sorted(file1.keys() | file2.keys())
@@ -46,10 +54,12 @@ def generator(file1, file2):
             result.append(get_added_status(key, value2))
         elif key in deleted:
             result.append(get_deleted_status(key, value1))
+            
+        elif isinstance(value1, dict) and isinstance(value2, dict):
+            result.append(get_nested_status(key, value1, value2))
+        elif value1 != value2:
+            result.append(get_changed_status(key, value1, value2))
         else:
-            if value1 != value2:
-                result.append(get_changed_status(key, value1, value2))
-            else:
-                result.append(get_unchanged_status(key, value1))
+            result.append(get_unchanged_status(key, value1))
     
     return result
