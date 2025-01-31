@@ -1,7 +1,7 @@
 def converting_value(value, indent_count=2):
     if isinstance(value, bool):
         return str(value).lower()
-    if value == None:
+    if value is None:
         return 'null'
     if isinstance(value, dict):
         indent = " " * (indent_count + 4)
