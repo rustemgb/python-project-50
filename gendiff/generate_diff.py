@@ -1,6 +1,6 @@
 from gendiff.generator import generator
 from gendiff.parser_files import parser_data_from_file
-from gendiff.stylish import get_diff_format_stylish
+from gendiff.formater.stylish import get_diff_format_stylish
 
 
 def generate_diff(file_path1, file_path2):
