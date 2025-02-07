@@ -13,17 +13,17 @@ def read_fixture(file_name):
 
 
 @pytest.mark.parametrize(
-    "file1, file2, result",
+    "file1, file2, format, result",
     [
-        ("file1.json", "file2.json", "result_stylish.txt"),
-        ("file1.yaml", "file2.yaml", "result_stylish.txt"),
-        ("file1.json", "file2.json", "result_plain.txt"),
-        ("file1.yaml", "file2.yaml", "result_plain.txt"),
+        ("file1.json", "file2.json", "stylish", "result_stylish.txt"),
+        ("file1.yaml", "file2.yaml", "stylish", "result_stylish.txt"),
+        ("file1.json", "file2.json", "plain", "result_plain.txt"),
+        ("file1.yaml", "file2.yaml", "plain", "result_plain.txt"),
     ],
 )
-def test_generate_diff(file1, file2, result):
+def test_generate_diff(file1, file2, format, result):
 
     file1_path = os.path.join(TEST_DATA_DIR, file1)
     file2_path = os.path.join(TEST_DATA_DIR, file2)
 
-    assert generate_diff(file1_path, file2_path) == read_fixture(result)
+    assert generate_diff(file1_path, file2_path, format) == read_fixture(result)
