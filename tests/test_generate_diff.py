@@ -17,6 +17,8 @@ def read_fixture(file_name):
     [
         ("file1.json", "file2.json", "result_stylish.txt"),
         ("file1.yaml", "file2.yaml", "result_stylish.txt"),
+        ("file1.json", "file2.json", "result_plain.txt"),
+        ("file1.yaml", "file2.yaml", "result_plain.txt"),
     ],
 )
 def test_generate_diff(file1, file2, result):
