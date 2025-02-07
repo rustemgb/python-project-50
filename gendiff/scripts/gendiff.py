@@ -3,8 +3,8 @@ from gendiff.generate_diff import generate_diff
 
 
 def main():
-    first_file, second_file = cli_parser()
-    diff = generate_diff(first_file, second_file)
+    first_file, second_file, formatter = cli_parser()
+    diff = generate_diff(first_file, second_file, formatter)
     print(diff)
 
 
