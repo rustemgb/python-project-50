@@ -20,7 +20,6 @@ def get_diff_format_plain(item, path=''):
     new_value = converting_value(item.get('new_value'))
     value = converting_value(item.get('value'))
 
-
     if status == 'added':
         return (f"Property '{current_path}' was added with value: {value}")
     if status == 'deleted':
@@ -32,8 +31,8 @@ def get_diff_format_plain(item, path=''):
         children = item.get('children')
         return format_plain(children, current_path)
         
-        
     return None
+
 
 def format_plain(diff, path=''):
     result = []
