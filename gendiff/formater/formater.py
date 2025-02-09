@@ -1,5 +1,6 @@
 from gendiff.formater.plain import format_plain
 from gendiff.formater.stylish import get_diff_format_stylish
+from gendiff.formater.json import json_format
 
 
 def choice_formats(diff, formatter):
@@ -7,3 +8,5 @@ def choice_formats(diff, formatter):
         return get_diff_format_stylish(diff)
     if formatter == "plain":
         return format_plain(diff)
+    if formatter == "json":
+        return json_format(diff)
