@@ -28,5 +28,4 @@ def test_generate_diff(file1, file2, format, result):
     file1_path = os.path.join(TEST_DATA_DIR, file1)
     file2_path = os.path.join(TEST_DATA_DIR, file2)
 
-    assert generate_diff(
-        file1_path, file2_path, format) == read_fixture(result)
+    assert generate_diff(file1_path, file2_path, format) == read_fixture(result)
