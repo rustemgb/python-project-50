@@ -16,11 +16,11 @@ def read_fixture(file_name):
     "file1, file2, formatter, file",
     [
         ("file1.json", "file2.json", "stylish", "result_stylish.txt"),
-        ("file1.yaml", "file2.yaml", "stylish", "result_stylish.txt"),
+        ("file1.yml", "file2.yml", "stylish", "result_stylish.txt"),
         ("file1.json", "file2.json", "plain", "result_plain.txt"),
-        ("file1.yaml", "file2.yaml", "plain", "result_plain.txt"),
+        ("file1.yml", "file2.yml", "plain", "result_plain.txt"),
         ("file1.json", "file2.json", "json", "result_json.txt"),
-        ("file1.yaml", "file2.yaml", "json", "result_json.txt"),
+        ("file1.yml", "file2.yml", "json", "result_json.txt"),
     ],
 )
 def test_generate_diff(file1, file2, formatter, file):
