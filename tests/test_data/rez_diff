@@ -1,0 +1,65 @@
+app-1  | E         
+app-1  | E         + None
+app-1  | E         - {
+app-1  | E         -     common: {
+app-1  | E         -       + follow: false
+app-1  | E         -         setting1: Value 1
+app-1  | E         -       - setting2: 200
+app-1  | E         -       - setting3: true
+app-1  | E         -       + setting3: {
+app-1  | E         -             key: value
+app-1  | E         -         }
+app-1  | E         -       + setting4: blah blah
+app-1  | E         -       + setting5: {
+app-1  | E         -             key5: value5
+app-1  | E         -         }
+app-1  | E         -         setting6: {
+app-1  | E         -             doge: {
+app-1  | E         -               - wow: too much
+app-1  | E         -               + wow: so much
+app-1  | E         -             }
+app-1  | E         -             key: value
+app-1  | E         -           + ops: vops
+app-1  | E         -         }
+app-1  | E         -     }
+app-1  | E         -     group1: {
+app-1  | E         -       - baz: bas
+app-1  | E         -       + baz: bars
+app-1  | E         -         foo: bar
+app-1  | E         -       - nest: {
+app-1  | E         -             key: value
+app-1  | E         -         }
+app-1  | E         -       + nest: str
+app-1  | E         -     }
+app-1  | E         -   - group2: {
+app-1  | E         -         abc: 12345
+app-1  | E         -         deep: {
+app-1  | E         -             id: 45
+app-1  | E         -         }
+app-1  | E         -     }
+app-1  | E         -   + group3: {
+app-1  | E         -         deep: {
+app-1  | E         -             id: {
+app-1  | E         -                 number: 45
+app-1  | E         -             }
+app-1  | E         -         }
+app-1  | E         -         fee: 100500
+app-1  | E         -     }
+app-1  | E         -     group4: {
+app-1  | E         -       - default: null
+app-1  | E         -       + default: 
+app-1  | E         -       - foo: 0
+app-1  | E         -       + foo: null
+app-1  | E         -       - isNested: false
+app-1  | E         -       + isNested: none
+app-1  | E         -       + key: false
+app-1  | E         -         nest: {
+app-1  | E         -           - bar: 
+app-1  | E         -           + bar: 0
+app-1  | E         -           - isNested: true
+app-1  | E         -         }
+app-1  | E         -       + someKey: true
+app-1  | E         -       - type: bas
+app-1  | E         -       + type: bar
+app-1  | E         -     }
+app-1  | E         - }
