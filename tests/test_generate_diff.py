@@ -13,7 +13,7 @@ def read_fixture(file_name):
 
 
 @pytest.mark.parametrize(
-    "file1, file2, formatter, file",
+    "file1, file2, formatter, result_file",
     [
         ("file1.json", "file2.json", "stylish", "result_stylish.txt"),
         ("file1.yml", "file2.yml", "stylish", "result_stylish.txt"),
