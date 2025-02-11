@@ -2,7 +2,7 @@ import os
 
 import pytest
 
-from gendiff.generate_diff import generate_diff
+from gendiff.differ import generate_diff
 
 TEST_DATA_DIR = os.path.join(os.path.dirname(__file__), "test_data")
 

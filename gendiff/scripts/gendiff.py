@@ -1,5 +1,5 @@
 from gendiff.cli import cli_parser
-from gendiff.generate_diff import generate_diff
+from gendiff.differ import generate_diff
 
 
 def main():
