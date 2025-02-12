@@ -24,7 +24,6 @@ def read_fixture(file_name):
     ],
 )
 def test_generate_diff(file1, file2, formatter, result_file):
-
     file1_path = os.path.join(TEST_DATA_DIR, file1)
     file2_path = os.path.join(TEST_DATA_DIR, file2)
 

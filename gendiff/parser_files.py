@@ -15,10 +15,9 @@ def get_format_file(file_path):
 
 
 def parser_data(data, format):
-    
-    if format == 'json':
+    if format == "json":
         return json.loads(data)
-    if format == 'yaml' or format == 'yml':
+    if format == "yaml" or format == "yml":
         return yaml.load(data, Loader=yaml.SafeLoader)
 
 
