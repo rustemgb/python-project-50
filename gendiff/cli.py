@@ -12,7 +12,8 @@ def cli_parser():
     parser.add_argument(
     '-f', '--format',
     type=str,
-    help='set format of output'
+    help='set format of output',
+    default='stylish'
     )
     
     args = parser.parse_args()
